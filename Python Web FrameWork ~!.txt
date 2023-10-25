@@ -1,0 +1,60 @@
+Flask:
+Flask is a micro-framework that is lightweight and flexible.
+It provides the essentials for building web applications, allowing you to add extensions and components as needed.
+Suitable for small to medium-sized projects.
+Ideal for developers who want more control over the components they use.
+To set up Flask:
+
+Install Flask:
+
+bash
+Copy code
+pip install Flask
+Create a Flask App:
+
+Create a new directory for your project and set up your Flask application.
+python
+Copy code
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+if __name__ == '__main__':
+    app.run()
+Start the Development Server:
+
+Run your Flask application using the development server.
+bash
+Copy code
+flask run
+
+
+
+Django:
+Django is a high-level, feature-rich framework that includes many built-in components for building robust web applications.
+It follows the "batteries-included" philosophy, providing authentication, database models, an admin interface, and more.
+Suitable for larger and more complex projects.
+Ideal for developers who want to follow a convention over configuration approach.
+To set up Django:
+
+Install Django:
+
+bash
+Copy code
+pip install Django
+Create a Django Project:
+
+Create a new Django project using the following command.
+bash
+Copy code
+django-admin startproject projectname
+Run the Development Server:
+
+Navigate to your project directory and run the development server.
+bash
+Copy code
+python manage.py runserver
